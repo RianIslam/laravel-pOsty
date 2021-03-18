@@ -7,7 +7,7 @@
     <title>pOsty</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-200">
     <nav class="p-6 bg-white flex justify-between">
     <ul class="flex items-center">
         <li>
