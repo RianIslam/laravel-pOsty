@@ -6,8 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <link rel="stylesheet" href="./style.css">
+
+    <style>
+        .container{
+            height: 100%;
+            display: grid;
+            /* 12columns */
+            /* grid-template-columns: repeat(12,1fr);
+            grid-template-rows: 50px auto 50px; */
+            /* auto-fit */
+            /* grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+            grid-template-rows:repeat(2,1fr); */
+            /* auto-fill */
+            grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+            grid-template-rows:repeat(2,1fr);
+           
+        }
+
+        .header{
+            grid-area: h;
+        }
+        .content{
+            grid-area: c;
+        }
+        .footer{
+            grid-area: f;
+        }
+        .menu{
+            grid-area: m;
+        }
+    </style>
+
 </head>
 <body>
-    
+    <div class="container">
+
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <!-- <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div> -->
+        <!-- <div class="one"><h1>1</h1></div>
+        <div class="two"><h1>1</h1></div>
+        <div class="three"><h1>1</h1></div>
+        <div class="four"><h1>1</h1></div>
+        <div class="five"><h1>1</h1></div> -->
+    </div>
 </body>
 </html>
