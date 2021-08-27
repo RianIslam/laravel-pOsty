@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .containerOne{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+        }
+        .containerTwo{
+            display: flex;
+            flex-basis: 100%;
+        }
+        .item{
+            flex-grow: 1;
+        }
+        @media (min-width: 768px){
+            .containerOne{
+                flex-direction: 40%;
+                flex-wrap: wrap;
+                flex-basis: 60%;
+            }
+            .containerTwo{
+                flex-basis: 50%;
+            }
+            .a{
+                flex-basis: 50%;
+            }
+            .b{
+                flex-basis: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="containerOne">
+            <div class="item a">A</div>
+            <div class="item b">B</div>
+            <div class="item c">D</div>
+        </div>
+        <div class="containerTwo">
+            <div class="item c">C</div>
+        </div>
+    </div>
+</body>
+</html>
